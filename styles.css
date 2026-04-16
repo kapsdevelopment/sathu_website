@@ -374,6 +374,25 @@ html[data-lang="th"] .feature-kicker {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.button-store {
+  color: var(--text);
+  border: 1px solid rgba(236, 164, 19, 0.26);
+  background:
+    linear-gradient(180deg, rgba(50, 40, 24, 0.92), rgba(29, 23, 13, 0.96));
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.button-store:hover {
+  border-color: rgba(236, 164, 19, 0.5);
+  background:
+    linear-gradient(180deg, rgba(58, 46, 28, 0.96), rgba(34, 26, 14, 0.98));
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.26),
+    0 0 0 1px rgba(236, 164, 19, 0.12);
+}
+
 .hero-note {
   margin: 18px 0 0;
   color: var(--muted-strong);

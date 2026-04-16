@@ -228,7 +228,7 @@ video {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+  grid-template-columns: minmax(0, 1fr) minmax(500px, 0.94fr);
   gap: 44px;
   align-items: center;
 }
@@ -396,25 +396,32 @@ html[data-lang="th"] .feature-kicker {
 }
 
 .hero-stage {
-  min-height: 720px;
+  min-height: 0;
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(230px, 0.98fr) minmax(220px, 0.84fr);
+  grid-template-rows: auto auto;
+  gap: 20px 24px;
+  align-items: end;
+  padding: 38px 12px 20px;
 }
 
 .hero-orbit {
   position: absolute;
-  inset: 6% 2% auto auto;
-  width: 440px;
-  height: 440px;
+  inset: 28px 12px auto auto;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   border: 1px solid rgba(236, 164, 19, 0.12);
   box-shadow: inset 0 0 60px rgba(236, 164, 19, 0.06);
+  z-index: 0;
 }
 
 .monk-halo {
   position: absolute;
-  top: 24px;
-  left: 24px;
-  width: 240px;
+  top: -12px;
+  left: -10px;
+  width: 170px;
   aspect-ratio: 1;
   border-radius: 50%;
   padding: 14px;
@@ -424,6 +431,8 @@ html[data-lang="th"] .feature-kicker {
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-lg);
+  opacity: 0.92;
+  z-index: 1;
 }
 
 .monk-halo::before {
@@ -457,11 +466,14 @@ html[data-lang="th"] .feature-kicker {
 }
 
 .hero-insight {
-  position: absolute;
-  top: 44px;
-  right: 0;
-  width: min(340px, 62%);
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  max-width: 340px;
+  justify-self: end;
   padding: 22px 22px 24px;
+  z-index: 3;
 }
 
 .card-label,
@@ -487,13 +499,14 @@ html[data-lang="th"] .feature-kicker {
 }
 
 .phone {
-  position: absolute;
+  position: relative;
   border-radius: 42px;
   padding: 12px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.04));
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.42);
+  z-index: 2;
 }
 
 .phone::before {
@@ -526,10 +539,13 @@ html[data-lang="th"] .feature-kicker {
 }
 
 .phone-primary {
-  left: 90px;
-  bottom: 18px;
-  width: min(310px, 42vw);
-  transform: rotate(-9deg);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: min(288px, 100%);
+  justify-self: start;
+  align-self: end;
+  margin-top: 96px;
+  transform: rotate(-7deg);
   animation: floatPrimary 9s ease-in-out infinite;
 }
 
@@ -538,10 +554,12 @@ html[data-lang="th"] .feature-kicker {
 }
 
 .phone-secondary {
-  right: 36px;
-  bottom: 76px;
-  width: min(240px, 34vw);
-  transform: rotate(10deg);
+  grid-column: 2;
+  grid-row: 2;
+  width: min(224px, 100%);
+  justify-self: end;
+  align-self: start;
+  transform: rotate(7deg);
   animation: floatSecondary 10s ease-in-out infinite;
 }
 
@@ -806,21 +824,8 @@ html[data-lang="th"] .feature-kicker {
   }
 
   .hero-stage {
-    min-height: 760px;
-  }
-
-  .hero-insight {
-    right: auto;
-    left: 14px;
-  }
-
-  .phone-primary {
-    left: 50%;
-    margin-left: -180px;
-  }
-
-  .phone-secondary {
-    right: 30px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .boon-panel {
@@ -865,37 +870,38 @@ html[data-lang="th"] .feature-kicker {
   }
 
   .hero-stage {
-    min-height: 760px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr);
+    gap: 18px;
+    padding-top: 28px;
   }
 
   .monk-halo {
-    width: 180px;
-    top: 8px;
-    left: 8px;
+    width: 136px;
+    top: -6px;
+    left: 4px;
   }
 
   .hero-insight {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 26px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    max-width: none;
+    justify-self: stretch;
   }
 
   .phone-primary {
-    left: 12px;
-    right: auto;
-    margin-left: 0;
-    width: min(250px, 58vw);
+    grid-column: 1;
+    grid-row: 2;
+    width: min(236px, 58vw);
+    margin-top: 0;
+    justify-self: start;
   }
 
   .phone-secondary {
-    right: 6px;
-    bottom: 30px;
-    width: min(188px, 42vw);
+    grid-column: 2;
+    grid-row: 2;
+    width: min(184px, 42vw);
+    justify-self: end;
+    align-self: end;
   }
 
   .feature-grid,
@@ -942,17 +948,25 @@ html[data-lang="th"] .feature-kicker {
   }
 
   .hero-stage {
-    min-height: 640px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 18px;
   }
 
   .phone-primary {
-    width: min(218px, 56vw);
-    bottom: 20px;
+    grid-column: 1;
+    grid-row: 2;
+    width: min(218px, 68vw);
+    justify-self: center;
+    transform: rotate(-4deg);
   }
 
   .phone-secondary {
-    width: min(154px, 40vw);
-    bottom: 38px;
+    grid-column: 1;
+    grid-row: 3;
+    width: min(176px, 56vw);
+    justify-self: center;
+    transform: rotate(4deg);
   }
 
   .boon-panel,

@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Sathu | Thai temples, culture and reflections",
+    "description": "Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app."
+  },
+  "brand": {
+    "tag": "Thai temples, culture and reflections"
+  },
+  "nav": {
+    "features": "Features",
+    "boon": "Boon",
+    "download": "Download",
+    "support": "Support"
+  },
+  "cta": {
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play"
+  },
+  "hero": {
+    "eyebrow": "A calmer guide to Thai temples",
+    "title": "Thai temples, daily wisdom, and Boon in one beautiful app.",
+    "lead": "Sathu helps people discover temples across Thailand, explore cultural context, and return to a calmer rhythm through daily reflections.",
+    "body": "It is not just a temple directory. It is a warm, bilingual companion for travellers, curious visitors, and people who want a gentler way into Thai Buddhist culture.",
+    "note": "Free to explore on iPhone, iPad, and Android.",
+    "pill": {
+      "discovery": "Temple discovery",
+      "wisdom": "Daily wisdom",
+      "boon": "Chat with Boon",
+      "language": "Thai + English"
+    },
+    "card": {
+      "label": "Inside the app",
+      "title": "Discover, learn, and reflect",
+      "body": "Browse temples, open maps, read context, and continue the experience with Boon in the same calm product."
+    }
+  },
+  "features": {
+    "eyebrow": "What makes Sathu special",
+    "title": "Designed to feel calm, useful, and welcoming",
+    "lead": "Every part of the experience is built to make temple discovery feel clear, respectful, and easy to return to.",
+    "temples": {
+      "kicker": "Temple discovery",
+      "title": "Find temples that are worth the stop",
+      "body": "Explore Thai temples with images, distance, and practical visitor details so the next visit feels simple, not random."
+    },
+    "culture": {
+      "kicker": "Context",
+      "title": "Read history and cultural background",
+      "body": "Move beyond names on a map with temple background, significance, and readable context in a clean experience."
+    },
+    "daily": {
+      "kicker": "Daily wisdom",
+      "title": "Open a small reflective moment each day",
+      "body": "Sathu brings gentle blessings and reflections into the same space as temple discovery, so the app can stay with you beyond the visit itself."
+    },
+    "language": {
+      "kicker": "Bilingual",
+      "title": "Made for both Thai and English",
+      "body": "Switch languages instantly and keep the experience approachable for locals, travellers, and international users."
+    },
+    "maps": {
+      "kicker": "Practical",
+      "title": "Search and continue your journey faster",
+      "body": "Search by name, open maps quickly, and use temple information that supports real visits instead of abstract browsing."
+    }
+  },
+  "boon": {
+    "eyebrow": "Meet Boon",
+    "title": "A calmer companion inside Sathu",
+    "body1": "Boon gives Sathu a more personal side. When users want to ask, reflect, or keep going after exploring a temple, Boon is there inside the app.",
+    "body2": "He is designed to feel warm, respectful, and easy to approach, giving the product a memorable character instead of a generic chat feature.",
+    "chip1": "In the same app",
+    "chip2": "Thai and English",
+    "chip3": "Warm, approachable presence",
+    "quote": "Hi — I’m Boon. How can I be with you today?"
+  },
+  "audience": {
+    "eyebrow": "Who it is for",
+    "title": "Useful for visitors, learners, and everyday moments",
+    "lead": "Sathu works as a discovery tool, a cultural guide, and a softer daily habit.",
+    "travel": {
+      "title": "Travellers in Thailand",
+      "body": "Find nearby temples, get oriented faster, and understand what you are visiting without losing time."
+    },
+    "learn": {
+      "title": "Curious learners",
+      "body": "Explore Thai Buddhist culture in a way that feels more human and more welcoming than scattered search results."
+    },
+    "reflect": {
+      "title": "People looking for calm",
+      "body": "Return for daily reflections and Boon when you want a quieter, more thoughtful moment."
+    }
+  },
+  "download": {
+    "eyebrow": "Start exploring",
+    "title": "Download Sathu and experience Thailand’s temples with more clarity",
+    "body": "Available on the App Store and Google Play, with support, privacy, and terms also available online."
+  },
+  "footer": {
+    "note": "Sathu by KAPSDEVELOPMENT AS",
+    "disclaimer": "Boon is an AI-powered feature inside Sathu. Responses can be imperfect and should not replace professional guidance.",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "assets": {
+    "templeAlt": "Temple detail view in the Sathu app",
+    "boonAlt": "Boon chat inside the Sathu app",
+    "boonAvatarAlt": "Illustration of Boon from the Sathu app"
+  }
+}

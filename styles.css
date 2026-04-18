@@ -418,11 +418,11 @@ html[data-lang="th"] .feature-kicker {
   min-height: 0;
   position: relative;
   display: grid;
-  grid-template-columns: minmax(230px, 0.98fr) minmax(220px, 0.84fr);
+  grid-template-columns: minmax(210px, 0.96fr) minmax(190px, 0.8fr);
   grid-template-rows: auto auto;
-  gap: 20px 24px;
+  gap: 22px 42px;
   align-items: end;
-  padding: 38px 12px 20px;
+  padding: 38px 18px 20px;
 }
 
 .hero-orbit {
@@ -440,10 +440,11 @@ html[data-lang="th"] .feature-kicker {
   position: absolute;
   top: -12px;
   left: -10px;
-  width: 170px;
+  width: 184px;
   aspect-ratio: 1;
   border-radius: 50%;
-  padding: 14px;
+  padding: 18px;
+  overflow: hidden;
   background:
     radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.16), transparent 48%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
@@ -466,7 +467,8 @@ html[data-lang="th"] .feature-kicker {
 .monk-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center 10px;
   border-radius: 50%;
 }
 
@@ -560,12 +562,11 @@ html[data-lang="th"] .feature-kicker {
 .phone-primary {
   grid-column: 1;
   grid-row: 1 / span 2;
-  width: min(288px, 100%);
+  width: min(252px, 100%);
   justify-self: start;
   align-self: end;
-  margin-top: 96px;
-  transform: rotate(-7deg);
-  animation: floatPrimary 9s ease-in-out infinite;
+  margin-top: 110px;
+  transform: rotate(-4deg) translateX(-8px);
 }
 
 .phone-primary .phone-shell {
@@ -575,11 +576,10 @@ html[data-lang="th"] .feature-kicker {
 .phone-secondary {
   grid-column: 2;
   grid-row: 2;
-  width: min(224px, 100%);
+  width: min(206px, 100%);
   justify-self: end;
-  align-self: start;
-  transform: rotate(7deg);
-  animation: floatSecondary 10s ease-in-out infinite;
+  align-self: end;
+  transform: rotate(4deg) translateX(8px);
 }
 
 .phone-secondary .phone-shell {
@@ -900,12 +900,12 @@ html[data-lang="th"] .feature-kicker {
 
   .hero-stage {
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr);
-    gap: 18px;
+    gap: 18px 24px;
     padding-top: 28px;
   }
 
   .monk-halo {
-    width: 136px;
+    width: 148px;
     top: -6px;
     left: 4px;
   }
@@ -920,17 +920,19 @@ html[data-lang="th"] .feature-kicker {
   .phone-primary {
     grid-column: 1;
     grid-row: 2;
-    width: min(236px, 58vw);
+    width: min(220px, 54vw);
     margin-top: 0;
     justify-self: start;
+    transform: rotate(-3deg) translateX(-4px);
   }
 
   .phone-secondary {
     grid-column: 2;
     grid-row: 2;
-    width: min(184px, 42vw);
+    width: min(164px, 36vw);
     justify-self: end;
     align-self: end;
+    transform: rotate(3deg) translateX(4px);
   }
 
   .feature-grid,
@@ -982,20 +984,27 @@ html[data-lang="th"] .feature-kicker {
     padding-top: 18px;
   }
 
+  .monk-halo {
+    width: 156px;
+    left: 50%;
+    top: -18px;
+    transform: translateX(-50%);
+  }
+
   .phone-primary {
     grid-column: 1;
     grid-row: 2;
-    width: min(218px, 68vw);
+    width: min(208px, 68vw);
     justify-self: center;
-    transform: rotate(-4deg);
+    transform: none;
   }
 
   .phone-secondary {
     grid-column: 1;
     grid-row: 3;
-    width: min(176px, 56vw);
+    width: min(170px, 56vw);
     justify-self: center;
-    transform: rotate(4deg);
+    transform: none;
   }
 
   .boon-panel,

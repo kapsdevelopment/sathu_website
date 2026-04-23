@@ -103,6 +103,10 @@
     "privacy": "Privacy",
     "terms": "Terms"
   },
+  "badges": {
+    "appStore": "./assets/store-badges/app-store-en.svg",
+    "googlePlay": "./assets/store-badges/google-play-en.svg"
+  },
   "assets": {
     "templeAlt": "Temple detail view in the Sathu app",
     "boonAlt": "Boon chat inside the Sathu app",

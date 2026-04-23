@@ -333,6 +333,7 @@ html[data-lang="th"] .feature-kicker {
 
 .hero-actions {
   margin-top: 28px;
+  align-items: center;
 }
 
 .button {
@@ -391,6 +392,24 @@ html[data-lang="th"] .feature-kicker {
   box-shadow:
     0 16px 34px rgba(0, 0, 0, 0.26),
     0 0 0 1px rgba(236, 164, 19, 0.12);
+}
+
+.store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-badge-link:focus-visible {
+  outline: 2px solid rgba(236, 164, 19, 0.9);
+  outline-offset: 6px;
+  border-radius: 14px;
+}
+
+.store-badge {
+  display: block;
+  height: 56px;
+  width: auto;
 }
 
 .hero-note {
@@ -963,6 +982,10 @@ html[data-lang="th"] .feature-kicker {
     width: 100%;
     justify-content: flex-start;
   }
+
+  .store-badge {
+    height: 52px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1005,6 +1028,10 @@ html[data-lang="th"] .feature-kicker {
     width: min(170px, 56vw);
     justify-self: center;
     transform: none;
+  }
+
+  .store-badge {
+    height: 48px;
   }
 
   .boon-panel,

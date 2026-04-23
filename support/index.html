@@ -153,14 +153,21 @@
           border-color: rgba(236,164,19,.55);
         }
         .btn.store{
-          border-color: rgba(236,164,19,.24);
-          background: linear-gradient(180deg, rgba(50,40,24,.92), rgba(29,23,13,.96));
-          box-shadow: 0 14px 30px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.06);
+          padding: 0;
+          border: 0;
+          background: transparent;
+          box-shadow: none;
         }
-        .btn.store:hover{
-          border-color: rgba(236,164,19,.48);
-          background: linear-gradient(180deg, rgba(58,46,28,.96), rgba(34,26,14,.98));
-          box-shadow: 0 16px 34px rgba(0,0,0,.22), 0 0 0 1px rgba(236,164,19,.10);
+        .store-badge-link{ display:inline-flex; align-items:center; justify-content:center; }
+        .store-badge-link:focus-visible{
+          outline: 2px solid rgba(236,164,19,.9);
+          outline-offset: 6px;
+          border-radius: 14px;
+        }
+        .store-badge{
+          display:block;
+          height: 54px;
+          width:auto;
         }
         .btn .dot{
           width: 10px; height:10px; border-radius: 99px;
@@ -376,20 +383,22 @@
                 </p>
                 <div class="cta-row" style="margin-top:14px;">
                     <a
-                        class="btn store"
+                        class="store-badge-link"
                         href="https://apps.apple.com/us/app/sathu/id6757160902"
                         target="_blank"
                         rel="noopener"
+                        aria-label="Download on the App Store"
                     >
-                        App Store
+                        <img class="store-badge" src="../assets/store-badges/app-store-en.svg" alt="Download on the App Store" />
                     </a>
                     <a
-                        class="btn store"
+                        class="store-badge-link"
                         href="https://play.google.com/store/apps/details?id=com.kapsdevelopment.thaitemples&pcampaignid=web_share"
                         target="_blank"
                         rel="noopener"
+                        aria-label="Get it on Google Play"
                     >
-                        Google Play
+                        <img class="store-badge" src="../assets/store-badges/google-play-en.svg" alt="Get it on Google Play" />
                     </a>
                 </div>
                 <p class="formhint" style="margin-top:14px;">

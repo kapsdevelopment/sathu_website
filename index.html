@@ -13,6 +13,30 @@
       name="theme-color"
       content="#221C10"
     />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://sathuapp.com/" id="canonical-link" />
+    <link rel="alternate" hreflang="en" href="https://sathuapp.com/" />
+    <link rel="alternate" hreflang="th" href="https://sathuapp.com/?lang=th" />
+    <link rel="alternate" hreflang="x-default" href="https://sathuapp.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sathu" />
+    <meta property="og:title" content="Sathu | Thai temples, culture and reflections" />
+    <meta
+      property="og:description"
+      content="Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app."
+    />
+    <meta property="og:url" content="https://sathuapp.com/" id="og-url" />
+    <meta property="og:image" content="https://sathuapp.com/assets/images/master_icon.png" />
+    <meta property="og:image:alt" content="Sathu app icon" />
+    <meta property="og:locale" content="en_US" id="og-locale" />
+    <meta property="og:locale:alternate" content="th_TH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sathu | Thai temples, culture and reflections" />
+    <meta
+      name="twitter:description"
+      content="Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app."
+    />
+    <meta name="twitter:image" content="https://sathuapp.com/assets/images/master_icon.png" />
     <link rel="icon" type="image/png" href="./assets/images/master_icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +45,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://sathuapp.com/#organization",
+            "name": "KAPSDEVELOPMENT",
+            "url": "https://kapsdevelopment.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://sathuapp.com/assets/images/master_icon.png"
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/sathu/id6757160902",
+              "https://play.google.com/store/apps/details?id=com.kapsdevelopment.thaitemples&pcampaignid=web_share"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sathuapp.com/#website",
+            "url": "https://sathuapp.com/",
+            "name": "Sathu",
+            "description": "Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app.",
+            "inLanguage": ["en", "th"],
+            "publisher": {
+              "@id": "https://sathuapp.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://sathuapp.com/#webpage",
+            "url": "https://sathuapp.com/",
+            "name": "Sathu | Thai temples, culture and reflections",
+            "description": "Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app.",
+            "isPartOf": {
+              "@id": "https://sathuapp.com/#website"
+            },
+            "about": {
+              "@id": "https://sathuapp.com/#app"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "MobileApplication",
+            "@id": "https://sathuapp.com/#app",
+            "name": "Sathu",
+            "url": "https://sathuapp.com/",
+            "description": "Discover Thai temples, daily wisdom, and Boon in one calm, beautifully designed app.",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "iOS, Android",
+            "inLanguage": ["en", "th"],
+            "image": "https://sathuapp.com/assets/images/master_icon.png",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/sathu/id6757160902",
+              "https://play.google.com/store/apps/details?id=com.kapsdevelopment.thaitemples&pcampaignid=web_share"
+            ],
+            "publisher": {
+              "@id": "https://sathuapp.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="page-aura aura-1" aria-hidden="true"></div>
@@ -41,15 +134,15 @@
         </a>
 
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#features" data-i18n="nav.features"></a>
-          <a href="#boon" data-i18n="nav.boon"></a>
-          <a href="#download" data-i18n="nav.download"></a>
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="#boon" data-i18n="nav.boon">Boon</a>
+          <a href="#download" data-i18n="nav.download">Download</a>
           <a
             href="https://sathuapp.com/support/"
             target="_blank"
             rel="noreferrer"
             data-i18n="nav.support"
-          ></a>
+          >Support</a>
         </nav>
 
         <div class="lang-switch" aria-label="Language switcher">
@@ -63,10 +156,10 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <div class="eyebrow" data-i18n="hero.eyebrow"></div>
-            <h1 data-i18n="hero.title"></h1>
-            <p class="hero-lead" data-i18n="hero.lead"></p>
-            <p class="hero-body" data-i18n="hero.body"></p>
+            <div class="eyebrow" data-i18n="hero.eyebrow">A calmer guide to Thai temples</div>
+            <h1 data-i18n="hero.title">Thai temples, daily wisdom, and Boon in one beautiful app.</h1>
+            <p class="hero-lead" data-i18n="hero.lead">Sathu helps people discover temples across Thailand, explore cultural context, and return to a calmer rhythm through daily reflections.</p>
+            <p class="hero-body" data-i18n="hero.body">It is not just a temple directory. It is a warm, bilingual companion for travellers, curious visitors, and people who want a gentler way into Thai Buddhist culture.</p>
 
             <div class="hero-actions">
               <a
@@ -99,13 +192,13 @@
               </a>
             </div>
 
-            <p class="hero-note" data-i18n="hero.note"></p>
+            <p class="hero-note" data-i18n="hero.note">Free to explore on iPhone, iPad, and Android.</p>
 
             <div class="hero-pills">
-              <span class="info-pill" data-i18n="hero.pill.discovery"></span>
-              <span class="info-pill" data-i18n="hero.pill.wisdom"></span>
-              <span class="info-pill" data-i18n="hero.pill.boon"></span>
-              <span class="info-pill" data-i18n="hero.pill.language"></span>
+              <span class="info-pill" data-i18n="hero.pill.discovery">Temple discovery</span>
+              <span class="info-pill" data-i18n="hero.pill.wisdom">Daily wisdom</span>
+              <span class="info-pill" data-i18n="hero.pill.boon">Chat with Boon</span>
+              <span class="info-pill" data-i18n="hero.pill.language">Thai + English</span>
             </div>
           </div>
 
@@ -125,9 +218,9 @@
             </div>
 
             <article class="hero-insight card-surface">
-              <span class="card-label" data-i18n="hero.card.label"></span>
-              <h2 data-i18n="hero.card.title"></h2>
-              <p data-i18n="hero.card.body"></p>
+              <span class="card-label" data-i18n="hero.card.label">Inside the app</span>
+              <h2 data-i18n="hero.card.title">Discover, learn, and reflect</h2>
+              <p data-i18n="hero.card.body">Browse temples, open maps, read context, and continue the experience with Boon in the same calm product.</p>
             </article>
 
             <div class="phone phone-primary">
@@ -158,17 +251,17 @@
       <section class="section" id="features">
         <div class="container">
           <div class="section-head reveal">
-            <div class="eyebrow" data-i18n="features.eyebrow"></div>
-            <h2 data-i18n="features.title"></h2>
-            <p data-i18n="features.lead"></p>
+            <div class="eyebrow" data-i18n="features.eyebrow">What makes Sathu special</div>
+            <h2 data-i18n="features.title">Designed to feel calm, useful, and welcoming</h2>
+            <p data-i18n="features.lead">Every part of the experience is built to make temple discovery feel clear, respectful, and easy to return to.</p>
           </div>
 
           <div class="feature-grid">
             <article class="feature-card feature-card-wide reveal">
               <div class="feature-copy">
-                <span class="feature-kicker" data-i18n="features.temples.kicker"></span>
-                <h3 data-i18n="features.temples.title"></h3>
-                <p data-i18n="features.temples.body"></p>
+                <span class="feature-kicker" data-i18n="features.temples.kicker">Temple discovery</span>
+                <h3 data-i18n="features.temples.title">Find temples that are worth the stop</h3>
+                <p data-i18n="features.temples.body">Explore Thai temples with images, distance, and practical visitor details so the next visit feels simple, not random.</p>
               </div>
 
               <div class="feature-preview">
@@ -184,27 +277,27 @@
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-kicker" data-i18n="features.culture.kicker"></span>
-              <h3 data-i18n="features.culture.title"></h3>
-              <p data-i18n="features.culture.body"></p>
+              <span class="feature-kicker" data-i18n="features.culture.kicker">Context</span>
+              <h3 data-i18n="features.culture.title">Read history and cultural background</h3>
+              <p data-i18n="features.culture.body">Move beyond names on a map with temple background, significance, and readable context in a clean experience.</p>
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-kicker" data-i18n="features.daily.kicker"></span>
-              <h3 data-i18n="features.daily.title"></h3>
-              <p data-i18n="features.daily.body"></p>
+              <span class="feature-kicker" data-i18n="features.daily.kicker">Daily wisdom</span>
+              <h3 data-i18n="features.daily.title">Open a small reflective moment each day</h3>
+              <p data-i18n="features.daily.body">Sathu brings gentle blessings and reflections into the same space as temple discovery, so the app can stay with you beyond the visit itself.</p>
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-kicker" data-i18n="features.language.kicker"></span>
-              <h3 data-i18n="features.language.title"></h3>
-              <p data-i18n="features.language.body"></p>
+              <span class="feature-kicker" data-i18n="features.language.kicker">Bilingual</span>
+              <h3 data-i18n="features.language.title">Made for both Thai and English</h3>
+              <p data-i18n="features.language.body">Switch languages instantly and keep the experience approachable for locals, travellers, and international users.</p>
             </article>
 
             <article class="feature-card reveal">
-              <span class="feature-kicker" data-i18n="features.maps.kicker"></span>
-              <h3 data-i18n="features.maps.title"></h3>
-              <p data-i18n="features.maps.body"></p>
+              <span class="feature-kicker" data-i18n="features.maps.kicker">Practical</span>
+              <h3 data-i18n="features.maps.title">Search and continue your journey faster</h3>
+              <p data-i18n="features.maps.body">Search by name, open maps quickly, and use temple information that supports real visits instead of abstract browsing.</p>
             </article>
           </div>
         </div>
@@ -225,20 +318,20 @@
             </div>
 
             <div class="boon-copy">
-              <div class="eyebrow" data-i18n="boon.eyebrow"></div>
-              <h2 data-i18n="boon.title"></h2>
-              <p data-i18n="boon.body1"></p>
-              <p data-i18n="boon.body2"></p>
+              <div class="eyebrow" data-i18n="boon.eyebrow">Meet Boon</div>
+              <h2 data-i18n="boon.title">A calmer companion inside Sathu</h2>
+              <p data-i18n="boon.body1">Boon gives Sathu a more personal side. When users want to ask, reflect, or keep going after exploring a temple, Boon is there inside the app.</p>
+              <p data-i18n="boon.body2">He is designed to feel warm, respectful, and easy to approach, giving the product a memorable character instead of a generic chat feature.</p>
 
               <div class="boon-chips">
-                <span class="info-pill" data-i18n="boon.chip1"></span>
-                <span class="info-pill" data-i18n="boon.chip2"></span>
-                <span class="info-pill" data-i18n="boon.chip3"></span>
+                <span class="info-pill" data-i18n="boon.chip1">In the same app</span>
+                <span class="info-pill" data-i18n="boon.chip2">Thai and English</span>
+                <span class="info-pill" data-i18n="boon.chip3">Warm, approachable presence</span>
               </div>
 
               <blockquote class="boon-quote">
                 <span class="quote-mark">“</span>
-                <p data-i18n="boon.quote"></p>
+                <p data-i18n="boon.quote">Hi — I’m Boon. How can I be with you today?</p>
               </blockquote>
             </div>
 
@@ -259,25 +352,25 @@
       <section class="section">
         <div class="container">
           <div class="section-head reveal">
-            <div class="eyebrow" data-i18n="audience.eyebrow"></div>
-            <h2 data-i18n="audience.title"></h2>
-            <p data-i18n="audience.lead"></p>
+            <div class="eyebrow" data-i18n="audience.eyebrow">Who it is for</div>
+            <h2 data-i18n="audience.title">Useful for visitors, learners, and everyday moments</h2>
+            <p data-i18n="audience.lead">Sathu works as a discovery tool, a cultural guide, and a softer daily habit.</p>
           </div>
 
           <div class="audience-grid">
             <article class="audience-card reveal">
-              <h3 data-i18n="audience.travel.title"></h3>
-              <p data-i18n="audience.travel.body"></p>
+              <h3 data-i18n="audience.travel.title">Travellers in Thailand</h3>
+              <p data-i18n="audience.travel.body">Find nearby temples, get oriented faster, and understand what you are visiting without losing time.</p>
             </article>
 
             <article class="audience-card reveal">
-              <h3 data-i18n="audience.learn.title"></h3>
-              <p data-i18n="audience.learn.body"></p>
+              <h3 data-i18n="audience.learn.title">Curious learners</h3>
+              <p data-i18n="audience.learn.body">Explore Thai Buddhist culture in a way that feels more human and more welcoming than scattered search results.</p>
             </article>
 
             <article class="audience-card reveal">
-              <h3 data-i18n="audience.reflect.title"></h3>
-              <p data-i18n="audience.reflect.body"></p>
+              <h3 data-i18n="audience.reflect.title">People looking for calm</h3>
+              <p data-i18n="audience.reflect.body">Return for daily reflections and Boon when you want a quieter, more thoughtful moment.</p>
             </article>
           </div>
         </div>
@@ -287,9 +380,9 @@
         <div class="container">
           <div class="download-panel reveal">
             <div class="download-copy">
-              <div class="eyebrow" data-i18n="download.eyebrow"></div>
-              <h2 data-i18n="download.title"></h2>
-              <p data-i18n="download.body"></p>
+              <div class="eyebrow" data-i18n="download.eyebrow">Start exploring</div>
+              <h2 data-i18n="download.title">Download Sathu and experience Thailand’s temples with more clarity</h2>
+              <p data-i18n="download.body">Available on the App Store and Google Play, with support, privacy, and terms also available online.</p>
             </div>
 
             <div class="download-actions">
@@ -337,15 +430,15 @@
               target="_blank"
               rel="noreferrer"
               data-i18n="footer.note"
-            ></a>
+            >Sathu by KAPSDEVELOPMENT</a>
           </p>
-          <p class="footer-disclaimer" data-i18n="footer.disclaimer"></p>
+          <p class="footer-disclaimer" data-i18n="footer.disclaimer">Boon is an AI-powered feature inside Sathu. Responses can be imperfect and should not replace professional guidance.</p>
         </div>
 
         <div class="footer-links">
-          <a href="https://sathuapp.com/support/" target="_blank" rel="noreferrer" data-i18n="footer.support"></a>
-          <a href="https://sathuapp.com/privacy/" target="_blank" rel="noreferrer" data-i18n="footer.privacy"></a>
-          <a href="https://sathuapp.com/terms/" target="_blank" rel="noreferrer" data-i18n="footer.terms"></a>
+          <a href="https://sathuapp.com/support/" target="_blank" rel="noreferrer" data-i18n="footer.support">Support</a>
+          <a href="https://sathuapp.com/privacy/" target="_blank" rel="noreferrer" data-i18n="footer.privacy">Privacy</a>
+          <a href="https://sathuapp.com/terms/" target="_blank" rel="noreferrer" data-i18n="footer.terms">Terms</a>
         </div>
       </div>
     </footer>

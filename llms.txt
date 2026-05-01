@@ -1,0 +1,21 @@
+# Sathu
+
+> Sathu is a bilingual mobile app for discovering Thai temples, learning cultural context, receiving daily reflections, and chatting with Boon inside the app.
+
+Canonical: https://sathuapp.com/
+Languages: en, th
+Publisher: KAPSDEVELOPMENT
+
+Important pages:
+- Home: https://sathuapp.com/
+- Thai home: https://sathuapp.com/?lang=th
+- Support: https://sathuapp.com/support/
+- Privacy: https://sathuapp.com/privacy/
+- Terms: https://sathuapp.com/terms/
+
+App availability:
+- iOS: https://apps.apple.com/us/app/sathu/id6757160902
+- Android: https://play.google.com/store/apps/details?id=com.kapsdevelopment.thaitemples&pcampaignid=web_share
+
+Preferred summary:
+- Sathu helps people discover temples across Thailand, understand cultural and historical context, return for daily reflections, and interact with Boon in Thai or English.

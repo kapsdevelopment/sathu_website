@@ -1,4 +1,5 @@
 const STORAGE_KEY = "sathu_website_lang";
+const SITE_URL = "https://sathuapp.com/";
 
 function getPreferredLanguage() {
   const urlLang = new URLSearchParams(window.location.search).get("lang");
@@ -62,6 +63,45 @@ function applySeo(strings) {
   if (description && strings?.seo?.description) {
     description.setAttribute("content", strings.seo.description);
   }
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && strings?.seo?.title) {
+    ogTitle.setAttribute("content", strings.seo.title);
+  }
+
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitle && strings?.seo?.title) {
+    twitterTitle.setAttribute("content", strings.seo.title);
+  }
+
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (ogDescription && strings?.seo?.description) {
+    ogDescription.setAttribute("content", strings.seo.description);
+  }
+
+  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDescription && strings?.seo?.description) {
+    twitterDescription.setAttribute("content", strings.seo.description);
+  }
+}
+
+function applyDiscoveryMeta(lang) {
+  const pageUrl = lang === "th" ? `${SITE_URL}?lang=th` : SITE_URL;
+
+  const canonical = document.querySelector("#canonical-link");
+  if (canonical) {
+    canonical.setAttribute("href", pageUrl);
+  }
+
+  const ogUrl = document.querySelector("#og-url");
+  if (ogUrl) {
+    ogUrl.setAttribute("content", pageUrl);
+  }
+
+  const ogLocale = document.querySelector("#og-locale");
+  if (ogLocale) {
+    ogLocale.setAttribute("content", lang === "th" ? "th_TH" : "en_US");
+  }
 }
 
 function setActiveLanguageButton(lang) {
@@ -74,7 +114,11 @@ function setActiveLanguageButton(lang) {
 function updateUrl(lang) {
   if (window.location.protocol === "file:") return;
   const url = new URL(window.location.href);
-  url.searchParams.set("lang", lang);
+  if (lang === "th") {
+    url.searchParams.set("lang", "th");
+  } else {
+    url.searchParams.delete("lang");
+  }
   window.history.replaceState({}, "", url);
 }
 
@@ -87,6 +131,7 @@ async function setLanguage(lang) {
   applyTextStrings(strings);
   applyAttributeStrings(strings);
   applySeo(strings);
+  applyDiscoveryMeta(lang);
   setActiveLanguageButton(lang);
 
   localStorage.setItem(STORAGE_KEY, lang);
